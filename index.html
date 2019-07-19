@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>General Trivial Trivia</title>
+  </head>
+  <body>
+        <div class="container">
+                <div class="header text-center">
+                    <h1 class="text-muted">General Trivial Trivia!</h1>
+                </div>
+                <div class="jumbotron">
+                    <div class="container">
+                        <div id="game">
+                            
+                            <p id="remaining-time" class="lead text-center">Remaining Time: <span id="timer"></span></p>
+                            <p id="question" class="lead text-center"></p>
+                        </div>
+                        <div class ="text-center" id="results">
+                        </div>
+                    </div>
+                    <div class="container">
+                    <div class="row">
+                        <div id="choices" class="mx-auto">
+                            <button id="start" class="btn btn-primary btn-lg">Start Game</button>
+                            <div id="options">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+    <!-- jQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+    ></script>
+
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+  </body>
+</html>
