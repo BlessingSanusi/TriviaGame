@@ -91,11 +91,7 @@ var questionSet = {
 
     $.each(questionOptions, function(index, key) {
       $("#options").append(
-        $(
-          '<button class="option btn btn-primary btn-lg m-1">' +
-            key +
-            "</button>"
-        )
+        $('<button class="option btn btn-primary m-1">' + key + "</button>")
       );
     });
   },
@@ -156,8 +152,8 @@ var questionSet = {
     if ($(this).text() === currentAnswer) {
       // turn button green for correct
       $(this)
-        .addClass("btn btn-outline-success")
-        .removeClass("btn btn-outline-info");
+        .addClass("btn btn-success")
+        .removeClass("btn btn-info");
 
       questionSet.correct++;
       clearInterval(questionSet.timerId);
@@ -169,7 +165,7 @@ var questionSet = {
       // turn button clicked red for incorrect
       $(this)
         .addClass("btn-danger")
-        .removeClass("btn btn-outline-info");
+        .removeClass("btn btn-info");
 
       questionSet.incorrect++;
       clearInterval(questionSet.timerId);
