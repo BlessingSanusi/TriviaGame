@@ -2,7 +2,7 @@
 
 ## A simple game using JavaScript for the logic and jQuery to manipulate HTML
 
-![Game](images/triviaGame.png)
+![Game](assets/images/triviaGame.png)
 
 ## Overview
 
